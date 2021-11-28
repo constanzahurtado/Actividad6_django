@@ -1,0 +1,13 @@
+{% extends 'calculadora_nutricional/layout.html' %}
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+    {{form.as_p}}
+    </div>
+    <button class="boton">Enviar</button>
+    
+    </form>
+
+{% endblock %}

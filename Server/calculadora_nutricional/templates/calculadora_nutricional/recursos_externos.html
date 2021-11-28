@@ -1,0 +1,55 @@
+{% extends 'calculadora_nutricional/layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid mt-3">
+    <h3>Recursos Externos</h3>
+    <p>En esta sección podrá revisar contenido relacionado a la Ley de Etiquetado.</p>
+    <div class="row">
+      <div class="col-sm-1 p-1"></div>
+      <div class="col-sm-2 p-2 bg-primary" id="background">
+        <img src="{% static 'img/manual_etiquetado.png' %}" alt="manual" class = "imagenrecurso">
+      </div>
+      <div class="col-sm-8 p-8">
+        <p class="parraforecurso">Manual Etiquetado Nutricional (Año 2018)</p>
+        <p>Este manual entrega información y orientación sobre como realizar el cálculo de los
+           principales nutrientes, y cuando un alimento lleva los sellos "Disco Pare".</p>
+      </div>
+      <div class="col-sm-1 p-1"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-1 p-1"></div>
+        <div class="col-sm-2 p-2 bg-primary" id="background">
+            <img src="{% static 'img/ley_20606.jpg' %}" alt="ley_20606" class = "imagenrecurso">
+        </div>
+        <div class="col-sm-8 p-8">
+            <p class="parraforecurso">Ley 202606 (Año 2012)</p>
+            <p>Obliga a los fabricantes de alimentos envasados a indicar en el envase o en la etiqueta los
+                ingredientes utilizados, incluyendo todos sus aditivos, su información nutricional y los
+                contenidos de energía, azúcares, sodio y grasas saturadas y los demás que el Ministerio de 
+                Salud determine.</p>
+        </div>
+        <div class="col-sm-1 p-1"></div>
+      </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-1 p-1"></div>
+        <div class="col-sm-2 p-2 bg-primary" id="background">
+            <img src="{% static 'img/leyfacil.jfif' %}" alt="ley_facil" class = "imagenrecurso" >
+        </div>
+        <div class="col-sm-8 p-8">
+            <p class="parraforecurso">Guía legal sobre Etiquetado de Alimentos (Año 2021)</p>
+            <p>Establece las normas de etiquetado de alimentos que deberán cumplir los fabricantes. Este es una forma 
+               rápida y sencilla de entender la Ley de Etiquetado. 
+            </p>
+        </div>
+        <div class="col-sm-1 p-1"></div>
+      </div>
+
+  </div>
+
+
+
+
+{% endblock %}

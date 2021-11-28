@@ -1,0 +1,27 @@
+nav{
+    background-color: whitesmoke;
+    font-size: 15px;
+
+}
+.imagenlogo{
+    width:50px
+
+}
+
+.imagenrecurso{
+    max-width: 260px;
+    max-height: 210px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.parraforecurso{
+    margin-top: 80px;
+
+}
+
+#background{
+    background-color: whitesmoke;
+}
+

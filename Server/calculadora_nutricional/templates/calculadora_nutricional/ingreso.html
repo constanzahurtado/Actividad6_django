@@ -1,0 +1,14 @@
+{% extends 'calculadora_nutricional/layout.html' %}
+{% block content %}
+
+<div class="container-fluid mt-3">
+    <h3>Ingrese a su cuenta</h3>
+    <p>Complete los siguientes campos para ingresar a su cuenta.</p>
+    <br>
+
+<form action ="/login" method ="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="boton">Ingresar</button>
+
+{% endblock %}

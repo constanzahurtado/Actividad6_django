@@ -1,0 +1,8 @@
+{% extends 'calculadora_nutricional/layout_usuario.html' %}
+{% block content %}
+    
+<p>Bienvenido</p>
+{% csrf_token %}
+{{request.user.username}}
+
+{% endblock %}

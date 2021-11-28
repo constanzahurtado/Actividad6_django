@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header style="height:50px">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="static/img/sello-alto-en.png" alt="logo" class="imagenlogo">
+          </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li><a href="{% url 'calculadora' %}">Calculadora</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'guia_usuario' %}">Guía Usuario</a></li>
+              <li><a href="{% url 'recursos_externos' %}">Recursos Externos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ayuda<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'sobre_mi' %}">Sobre mí</a></li>
+              <li><a href="{% url 'preguntas_frecuentes' %}">Preguntas Frecuentes</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'contacto' %}">Contacto</a></li>
+          <li><a href="/cerrar_sesion"><span class="glyphicon glyphicon-log-out"></span>Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    {% block content %}
+ 
+    {% endblock %}
+
+</body>
+</html>
